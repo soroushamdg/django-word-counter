@@ -1,0 +1,14 @@
+<html>
+<h1>count</h1>
+<a type="button" href="{% url 'home' %}"> start again </a>
+    
+<h1>there are {{ fulltext }} words in text</h1>
+<br />
+<h1>words list : </h1>
+{% for item,counts in words %}
+
+{{ item }} - {{ counts }}
+<br />
+
+{% endfor %}
+</html>
